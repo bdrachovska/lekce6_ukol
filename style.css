@@ -1,0 +1,126 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+/*
+ BARVY
+ sede pozadi      #e5e5e5
+ svetle fialova   #48418e
+ tmave fialova    #25133d
+
+ POUZITE PISMO
+ Source Sans Pro - rezy pisma light 300, regular 400 a bold 700
+ https://fonts.google.com/specimen/Roboto
+*/
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #e5e5e5;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.obal {
+    width: 960px; /* obsah stránky je omezený do pruhu širokého 960px */
+    margin: 0 auto; /* pruh je na stránce vycentrovaný */
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ----- zde začni psát vlastní CSS ----- */
+a {
+    text-decoration: none;
+}
+.hlavni-navigace a {
+    color:black;
+    }
+
+ul{
+    list-style:none;
+    color: black;
+}
+.hlavni-navigace ul {
+    display: flex;
+    font-size: 18px;
+}
+
+.hlavni-navigace li:first-child {
+    font-weight: bold;
+}
+
+.hlavni-navigace li {
+    margin: 25px 25px 0 25px;
+}
+.obsah {
+    background-image: url("images/pozadi.jpg");
+    color: white;
+    padding: 16px;
+    }
+.obsah a {
+    color: white;
+    font-weight: 300;
+}
+.obsah h1 {
+    font-size: 79px;
+    margin-left: 40px;
+    font-weight: 400;
+}
+.obsah p {
+    font-size: 38px;
+    margin-left: 40px;
+    font-weight: 300;
+}
+.obsah img {
+    position: absolute; left: 706px; top: 194px;
+}
+.sekundarni-navigace ul {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 18px;
+}
+
+.sekundarni-navigace li {
+    padding: 27px 25px 27px 0px;
+}
+
+.sekundarni-navigace a {
+    padding: 20px;
+    border: solid;
+    border-radius: 10px;
+}
+
+.sekundarni-navigace a:hover {
+    background-color: #48418e
+}
+
+.clanky ul {
+    display: flex;
+    }
+
+
+.clanky li {
+    padding: 0 40px 0 22px;
+}
+.clanky img{
+    margin-left: 87px;
+    margin-top: 37px;
+}
+h2 {
+    color: #48418e;
+}
+.clanky h2 {
+    text-align: center;
+}
+.clanky p {
+    text-align: center;
+}
+footer {
+    color: white;
+    text-align: center;
+    background-color: #48418e;
+    font-size: 12px;
+    padding: 10px;
+}
